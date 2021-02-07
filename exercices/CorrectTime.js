@@ -11,11 +11,12 @@ const timeCorrect = t => {
         }
     }
 
-    console.log(values)
+    var toReturn = ["", ":", "", ":", ""]
+    toReturn[0] = values[0];
+    toReturn[2] = values[1];
+    toReturn[4] = values[2];
+
+    return toReturn.toString().replace(/(,)/g, "");
 }
 
-timeCorrect("09:10:01");
-timeCorrect("11:70:10");
-
-
-
+module.exports = timeCorrect
