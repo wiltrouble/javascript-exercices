@@ -1,5 +1,4 @@
 const { expect } = require('@jest/globals');
-const { EXPECTED_COLOR } = require('jest-matcher-utils');
 const correctTime = require('../exercices/CorrectTime');
 
 test("11:70:10 should be converted to 12:10:10", () => {
